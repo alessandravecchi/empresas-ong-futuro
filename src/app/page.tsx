@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -33,11 +33,11 @@ import {
    ============================================================ */
 const WHATS_E164 = "554899832081"; // +55 48 9983-2081 (sem + para wa.me)
 const EMAIL = "acolhimento@cuidatoria.com.br";
-const preMsg = encodeURIComponent("OlÃ¡! Gostaria de conhecer o patrocÃ­nio do ONG do Futuro.");
+const preMsg = encodeURIComponent("Olá! Gostaria de conhecer o patrocínio do ONG do Futuro.");
 const pdfDeckUrl = "/cotas-ong.pdf"; // coloque o arquivo em /public/cotas-ong.pdf
 
 /* ============================================================
-   PÃGINA
+   PÁGINA
    ============================================================ */
 export default function PatrocinePage() {
   return (
@@ -60,7 +60,7 @@ export default function PatrocinePage() {
       {/* faixa decorativa inferior */}
       <div className="h-1.5 bg-gradient-to-r from-brand-teal via-brand-gold to-brand-orange" />
 
-      {/* BotÃµes flutuantes */}
+      {/* Botões flutuantes */}
       <FloatContacts />
     </main>
   );
@@ -101,7 +101,7 @@ function Hero() {
           <div className="flex items-center gap-3 mb-4">
             <Image src="/logo-cuidatoria.png" alt="Cuidatoria" width={44} height={44} />
             <Badge className="bg-brand-teal/10 text-brand-teal border-brand-teal/20">
-              PatrocÃ­nio com impacto real
+              Patrocínio com impacto real
             </Badge>
           </div>
 
@@ -115,8 +115,8 @@ function Hero() {
           </h1>
 
           <p className="mt-5 text-lg md:text-xl text-brand-ink/75 max-w-2xl">
-            Aceleramos 100 OSC com tecnologia, mentorias e governanÃ§a. Sua empresa associa a marca a
-            resultados mensurÃ¡veis, ESG e ODS â€” com transparÃªncia ponta a ponta.
+            Aceleramos 100 OSC com tecnologia, mentorias e governança. Sua empresa associa a marca a
+            resultados mensuráveis, ESG e ODS — com transparência ponta a ponta.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -148,10 +148,10 @@ function Hero() {
 
           <div className="mt-6 flex items-center gap-6 text-brand-ink/70">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="h-5 w-5 text-brand-teal" /> TransparÃªncia &amp; Compliance
+              <ShieldCheck className="h-5 w-5 text-brand-teal" /> Transparência &amp; Compliance
             </div>
             <div className="flex items-center gap-2">
-              <LineChart className="h-5 w-5 text-brand-orange" /> Indicadores e RelatÃ³rios
+              <LineChart className="h-5 w-5 text-brand-orange" /> Indicadores e Relatórios
             </div>
           </div>
         </motion.div>
@@ -172,9 +172,9 @@ function Hero() {
                     { icon: Sparkles, label: "Tecnologia social" },
                     { icon: Target, label: "Metas claras" },
                     { icon: Building2, label: "HUB presencial" },
-                    { icon: ShieldCheck, label: "GovernanÃ§a" },
-                    { icon: LineChart, label: "MÃ©tricas em tempo real" },
-                    { icon: Handshake, label: "ConexÃ£o OSCâ€“empresa" },
+                    { icon: ShieldCheck, label: "Governança" },
+                    { icon: LineChart, label: "Métricas em tempo real" },
+                    { icon: Handshake, label: "Conexão OSC–empresa" },
                   ].map(({ icon: Icon, label }, i) => (
                     <Card
                       key={i}
@@ -216,23 +216,23 @@ function ValueProps() {
   const items = [
     {
       icon: HeartHandshake,
-      title: "Branding com propÃ³sito",
-      desc: "Associe sua marca a entregas concretas e cobertura positiva na mÃ­dia local.",
+      title: "Branding com propósito",
+      desc: "Associe sua marca a entregas concretas e cobertura positiva na mídia local.",
     },
     {
       icon: ShieldCheck,
       title: "Risco reduzido",
-      desc: "Processos padronizados, checklists e trilha de compliance na execuÃ§Ã£o.",
+      desc: "Processos padronizados, checklists e trilha de compliance na execução.",
     },
     {
       icon: LineChart,
-      title: "MensuraÃ§Ã£o",
-      desc: "Dashboard com indicadores por OSC, etapa, municÃ­pio e perÃ­odo.",
+      title: "Mensuração",
+      desc: "Dashboard com indicadores por OSC, etapa, município e período.",
     },
     {
       icon: Handshake,
       title: "Engajamento",
-      desc: "AÃ§Ãµes no HUB, voluntariado corporativo e certificaÃ§Ã£o de apoio.",
+      desc: "Ações no HUB, voluntariado corporativo e certificação de apoio.",
     },
   ] as const;
 
@@ -271,7 +271,7 @@ function ValueProps() {
 }
 
 /* ============================================================
-   COMO FUNCIONA â€” NOVOS CARDS TECH
+   COMO FUNCIONA — NOVOS CARDS TECH
    ============================================================ */
 function StepCard({
   index,
@@ -321,7 +321,7 @@ function StepCard({
               </div>
             </div>
             <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-brand-teal/12 border border-brand-teal/25 text-brand-teal">
-              {index + 1}Âª etapa
+              {index + 1}ª etapa
             </span>
           </div>
           <h3 className="mt-4 text-lg font-semibold tracking-tight">{title}</h3>
@@ -336,33 +336,33 @@ function StepCard({
 function HowItWorks() {
   const steps = [
     {
-      title: "DiagnÃ³stico DIALOGICS",
-      desc: "AvaliaÃ§Ã£o em <1 min por OSC, mapeando maturidade e prioridades.",
+      title: "Diagnóstico DIALOGICS",
+      desc: "Avaliação em <1 min por OSC, mapeando maturidade e prioridades.",
       Icon: FileText,
     },
     {
-      title: "RegularizaÃ§Ã£o",
-      desc: "Apoio jurÃ­dico-contÃ¡bil, checklists e conferÃªncias documentais.",
+      title: "Regularização",
+      desc: "Apoio jurídico-contábil, checklists e conferências documentais.",
       Icon: Building2,
     },
     {
-      title: "CapacitaÃ§Ã£o",
-      desc: "Mentorias prÃ¡ticas, portfÃ³lio, apresentaÃ§Ãµes e evidÃªncias de impacto.",
+      title: "Capacitação",
+      desc: "Mentorias práticas, portfólio, apresentações e evidências de impacto.",
       Icon: Users2,
     },
     {
       title: "Projetos & Editais",
-      desc: "Edital Certo: aderÃªncia projetoâ€“edital, revisÃ£o tÃ©cnica e submissÃ£o.",
+      desc: "Edital Certo: aderência projeto–edital, revisão técnica e submissão.",
       Icon: Target,
     },
     {
-      title: "PrestaÃ§Ã£o de contas",
+      title: "Prestação de contas",
       desc: "Modelos, fluxos e treinamento para executar e comprovar corretamente.",
       Icon: ClipboardCheck,
     },
     {
-      title: "CertificaÃ§Ã£o & ConexÃ£o",
-      desc: "Evento final e aproximaÃ§Ã£o OSCâ€“empresas para continuidade.",
+      title: "Certificação & Conexão",
+      desc: "Evento final e aproximação OSC–empresas para continuidade.",
       Icon: Award,
     },
   ] as const;
@@ -372,8 +372,8 @@ function HowItWorks() {
       <div className="max-w-7xl mx-auto px-6">
         <SectionTitle>Como funciona</SectionTitle>
         <p className="mt-2 text-brand-ink/70 max-w-2xl">
-          Metodologia em 6 etapas, combinando tecnologia proprietÃ¡ria, mentoria executiva e
-          governanÃ§a.
+          Metodologia em 6 etapas, combinando tecnologia proprietária, mentoria executiva e
+          governança.
         </p>
 
         <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -394,17 +394,17 @@ function ESGeODS() {
     {
       icon: Globe2,
       title: "ODS 16 & 17",
-      desc: "InstituiÃ§Ãµes eficazes, parcerias e fortalecimento do 3Âº setor.",
+      desc: "Instituições eficazes, parcerias e fortalecimento do 3º setor.",
     },
     {
       icon: Leaf,
-      title: "ESG â€” Social (S)",
-      desc: "Capilaridade social com governanÃ§a e mÃ©tricas claras.",
+      title: "ESG — Social (S)",
+      desc: "Capilaridade social com governança e métricas claras.",
     },
     {
       icon: Recycle,
-      title: "ESG â€” GovernanÃ§a (G)",
-      desc: "Conformidade e prestaÃ§Ã£o de contas padronizada.",
+      title: "ESG — Governança (G)",
+      desc: "Conformidade e prestação de contas padronizada.",
     },
   ] as const;
 
@@ -415,7 +415,7 @@ function ESGeODS() {
           <div className="h-10 w-10 rounded-full bg-brand-teal/10 flex items-center justify-center">
             <Factory className="h-5 w-5 text-brand-teal" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-black">ESG &amp; ODS na prÃ¡tica</h2>
+          <h2 className="text-3xl md:text-4xl font-black">ESG &amp; ODS na prática</h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -465,16 +465,16 @@ function ImpactKPIs() {
       <div className="max-w-7xl mx-auto px-6">
         <SectionTitle>Impacto esperado</SectionTitle>
         <p className="mt-2 text-brand-ink/70 max-w-2xl">
-          Indicadores para acompanhamento de gabinete, empresas e sociedade â€” com relatÃ³rios mensais.
+          Indicadores para acompanhamento de gabinete, empresas e sociedade — com relatórios mensais.
         </p>
 
         <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           <KPI k="100" v="OSCs diagnosticadas" />
-          <KPI k="â‰¥ 80" v="OSCs regularizadas" />
-          <KPI k="â‰¥ 70" v="projetos aptos a edital" />
-          <KPI k="â‰¥ 50" v="submissÃµes a editais" />
-          <KPI k="9" v="meses de operaÃ§Ã£o" />
-          <KPI k="1" v="HUB fÃ­sico ativo" />
+          <KPI k="≥ 80" v="OSCs regularizadas" />
+          <KPI k="≥ 70" v="projetos aptos a edital" />
+          <KPI k="≥ 50" v="submissões a editais" />
+          <KPI k="9" v="meses de operação" />
+          <KPI k="1" v="HUB físico ativo" />
         </div>
       </div>
     </section>
@@ -482,7 +482,7 @@ function ImpactKPIs() {
 }
 
 /* ============================================================
-   COTAS â€” CARD (com selo visÃ­vel)
+   COTAS — CARD (com selo visível)
    ============================================================ */
 function Tier({
   destaque = false,
@@ -497,7 +497,7 @@ function Tier({
   bullets: string[];
   whatsE164?: string;
 }) {
-  const msg = encodeURIComponent(`OlÃ¡! Tenho interesse na cota ${titulo} do ONG do Futuro.`);
+  const msg = encodeURIComponent(`Olá! Tenho interesse na cota ${titulo} do ONG do Futuro.`);
   return (
     <div className="relative group">
       {/* AURA / SOMBRA COLORIDA AO HOVER */}
@@ -519,7 +519,7 @@ function Tier({
             : "border-black/10 shadow-sm hover:shadow-md overflow-hidden"
         }`}
       >
-        {/* BADGE â€œMAIS POPULARâ€ */}
+        {/* BADGE “MAIS POPULAR” */}
         {destaque && (
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 pointer-events-none">
             <span className="relative inline-flex items-center gap-2 px-3 py-[6px] rounded-full text-xs font-bold text-white shadow">
@@ -549,7 +549,7 @@ function Tier({
             ))}
           </ul>
 
-          {/* BOTÃƒO VISUAL / GRANDE / GRADIENTE */}
+          {/* BOTÃO VISUAL / GRANDE / GRADIENTE */}
           <a
             href={`https://wa.me/${whatsE164}?text=${msg}`}
             target="_blank"
@@ -571,7 +571,7 @@ function Tier({
 }
 
 /* ============================================================
-   COTAS â€” SEÃ‡ÃƒO
+   COTAS — SEÇÃO
    ============================================================ */
 function SponsorshipTiers() {
   return (
@@ -581,12 +581,12 @@ function SponsorshipTiers() {
           <div className="h-10 w-10 rounded-full bg-brand-teal/10 flex items-center justify-center">
             <Award className="h-5 w-5 text-brand-teal" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-black">Cotas de patrocÃ­nio</h2>
+          <h2 className="text-3xl md:text-4xl font-black">Cotas de patrocínio</h2>
         </div>
 
         <p className="text-brand-ink/70 max-w-3xl">
-          OpÃ§Ãµes acessÃ­veis e modulÃ¡veis para empresas de diferentes portes. Todas incluem
-          visibilidade, relatÃ³rios e certificaÃ§Ã£o de apoio.
+          Opções acessíveis e moduláveis para empresas de diferentes portes. Todas incluem
+          visibilidade, relatórios e certificação de apoio.
         </p>
 
         <div className="mt-8 grid md:grid-cols-3 gap-7">
@@ -597,13 +597,13 @@ function SponsorshipTiers() {
             transition={{ duration: 0.45 }}
           >
             <Tier
-              titulo="Amiga â€” R$ 25 mil"
+              titulo="Amiga — R$ 25 mil"
               preco="R$ 25.000"
               bullets={[
                 "Logo em materiais digitais",
                 "Certificado de apoio",
-                "RelatÃ³rio consolidado (trimestral)",
-                "AtivaÃ§Ã£o de voluntariado (1 aÃ§Ã£o)",
+                "Relatório consolidado (trimestral)",
+                "Ativação de voluntariado (1 ação)",
               ]}
             />
           </motion.div>
@@ -616,12 +616,12 @@ function SponsorshipTiers() {
           >
             <Tier
               destaque
-              titulo="Parceira â€” R$ 50 mil"
+              titulo="Parceira — R$ 50 mil"
               preco="R$ 50.000"
               bullets={[
                 "Destaque em site e evento",
-                "RelatÃ³rios mensais + dashboard",
-                "2 ativaÃ§Ãµes de voluntariado",
+                "Relatórios mensais + dashboard",
+                "2 ativações de voluntariado",
                 "Co-brand em oficinas selecionadas",
               ]}
             />
@@ -634,13 +634,13 @@ function SponsorshipTiers() {
             transition={{ duration: 0.45, delay: 0.1 }}
           >
             <Tier
-              titulo="Master â€” R$ 120 mil"
+              titulo="Master — R$ 120 mil"
               preco="R$ 120.000"
               bullets={[
                 "Cota master (topo de marca)",
-                "RelatÃ³rios mensais + acesso a dados",
-                "3+ ativaÃ§Ãµes de voluntariado",
-                "Naming do HUB* ou trilha (sob aprovaÃ§Ã£o)",
+                "Relatórios mensais + acesso a dados",
+                "3+ ativações de voluntariado",
+                "Naming do HUB* ou trilha (sob aprovação)",
               ]}
             />
           </motion.div>
@@ -673,19 +673,19 @@ function FAQ() {
   const qs = [
     {
       q: "Como acompanho os resultados?",
-      a: "VocÃª receberÃ¡ relatÃ³rios periÃ³dicos e acesso a um dashboard com indicadores por OSC, etapa e municÃ­pio.",
+      a: "Você receberá relatórios periódicos e acesso a um dashboard com indicadores por OSC, etapa e município.",
     },
     {
-      q: "Ã‰ possÃ­vel ativar voluntariado corporativo?",
-      a: "Sim. Organizamos aÃ§Ãµes no HUB e em eventos temÃ¡ticos, com registro audiovisual e certificaÃ§Ã£o.",
+      q: "É possível ativar voluntariado corporativo?",
+      a: "Sim. Organizamos ações no HUB e em eventos temáticos, com registro audiovisual e certificação.",
     },
     {
-      q: "O patrocÃ­nio pode ser fracionado?",
-      a: "Podemos modular as entregas para adequar o investimento por perÃ­odo (mensal/trimestral).",
+      q: "O patrocínio pode ser fracionado?",
+      a: "Podemos modular as entregas para adequar o investimento por período (mensal/trimestral).",
     },
     {
-      q: "HÃ¡ contrapartidas de visibilidade?",
-      a: "Sim. PresenÃ§a de marca em comunicaÃ§Ã£o, eventos e materiais, de acordo com a cota.",
+      q: "Há contrapartidas de visibilidade?",
+      a: "Sim. Presença de marca em comunicação, eventos e materiais, de acordo com a cota.",
     },
   ] as const;
 
@@ -720,8 +720,8 @@ function FinalCTA() {
             Vamos construir esse legado em Santa Catarina?
           </h2>
           <p className="mt-3 text-brand-ink/75 max-w-2xl">
-            Patrocinar o ONG do Futuro Ã© investir em governanÃ§a, eficiÃªncia e impacto imediato no
-            territÃ³rio. Sua marca no centro de entregas que mudam a realidade das OSCs e da
+            Patrocinar o ONG do Futuro é investir em governança, eficiência e impacto imediato no
+            território. Sua marca no centro de entregas que mudam a realidade das OSCs e da
             comunidade.
           </p>
 
@@ -758,7 +758,7 @@ function FinalCTA() {
               <div className="relative w-full aspect-[16/9] sm:aspect-[4/3]">
                 <Image
                   src="/images/cuidatoria-hub.png"
-                  alt="Cuidatoria HUB â€” espaÃ§o de acolhimento"
+                  alt="Cuidatoria HUB — espaço de acolhimento"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 520px"
@@ -767,7 +767,7 @@ function FinalCTA() {
               </div>
               <div className="px-4 py-2 text-sm text-brand-ink/80 flex items-center gap-2">
                 <Building2 className="h-4 w-4 text-brand-teal" />
-                HUB do 3Âº Setor â€” Cuidatoria
+                HUB do 3º Setor — Cuidatoria
               </div>
             </div>
           </div>
@@ -793,7 +793,7 @@ function FloatContacts() {
         <span className="text-sm font-medium">{EMAIL}</span>
       </a>
 
-      {/* WhatsApp cÃ­rculo */}
+      {/* WhatsApp círculo */}
       <a
         href={`https://wa.me/${WHATS_E164}?text=${preMsg}`}
         aria-label="Falar no WhatsApp"
